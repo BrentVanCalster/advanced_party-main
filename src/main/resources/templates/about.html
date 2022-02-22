@@ -14,7 +14,7 @@
         <a class="buttonLook menuButton" th:href="@{/venuelist}">Venuelist</a>
     </div>
 </div>
-
+<div th:replace="fragments/header :: header">Header</div>
 <h1>About me</h1>
 blabla blabla blabla bla
 <div class="row1">
@@ -29,6 +29,6 @@ blabla blabla blabla bla
     <p>copyright ThomasMore</p>
 </div>
 
-
+<div th:replace="fragments/footer :: footer">footer</div>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>home</title>
 </head>
 <body>
+
 <div class="nav">
     <h1>Let's Party!</h1>
     <div class="navbuttons">
@@ -14,6 +15,7 @@
         <a class="buttonLook menuButton" th:href="@{/venuelist}">Venuelist</a>
     </div>
 </div>
+<div th:replace="fragments/header :: header">header</div>
 
 <h1>Hello</h1>
 <div class="row1">
@@ -25,6 +27,6 @@
 <div class="bottom">
     <p>copyright ThomasMore</p>
 </div>
-
+<div th:replace="fragments/footer :: footer">footer</div>
 </body>
 </html>
