@@ -20,7 +20,16 @@ public class Venue {
     public Venue() {
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Venue(String venueName, String linkMoreInfo, int capacity, boolean foodProvided, boolean indoor, boolean outdoor, boolean freeParkingAvailable, String city, int distanceFromPublicTransportInKm) {
+
         this.venueName = venueName;
         this.linkMoreInfo = linkMoreInfo;
         this.capacity = capacity;

@@ -11,9 +11,10 @@
         <div class="row1">
             <div class="row1content">
                 <h2>Venues</h2>
-                <div><a class="buttonLook mediumButton" th:href="@{/venuedetails/1}">Venue 1</a></div>
-                <div><a class="buttonLook mediumButton" th:href="@{/venuedetails/2}">Venue 2</a></div>
-                <div><a class="buttonLook mediumButton" th:href="@{/venuedetails/3}">Venue 3</a></div>
+                <div th:each="venue: ${venues}">
+                    <a class="buttonLook mediumButton" th:href="@{|/venuedetails/${venue.id}|}" th:text="${venue.venueName}">Venue Name</a>
+
+                </div>
             </div>
         </div>
     <div th:replace="fragments/footer :: footer">footer</div>
