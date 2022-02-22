@@ -26,5 +26,9 @@ public class VenueController {
         }
         return "venuedetails";
     }
+    @GetMapping("/venuelist")
+    public String venuelist(Model model){
+        return "venuelist";
+    }
 
 }
