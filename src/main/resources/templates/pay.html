@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}"/>
+      <title>Pay</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Let's Party!</h1>
+      <div class="navbuttons">
+        <a class="buttonLook menuButton" th:href="@{/home}">home</a>
+        <a class="buttonLook menuButton" th:href="@{/about}">about</a>
+        <a class="buttonLook menuButton" th:href="@{/venuelist}">Venuelist</a>
+        <a class="buttonLook menuButton" th:href="@{/pay}">Pay</a>
+      </div>
+    </div>
+    <main>
+      <div class="row1">
+        <div class="row1content">
+          <p th:text = "${today}"></p>
+          <p th:text = "${uitersteDatum}"></p>
+          <p th:text = "${todaytime}"></p>
+          <p th:text = "${test}"></p>
+        </div>
+      </div>
+    </main>
+
+
+    <div th:replace="fragments/footer :: footer">footer</div>
+  </body>
+</html>
