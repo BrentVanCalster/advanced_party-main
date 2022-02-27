@@ -11,6 +11,13 @@
         <div class="row1">
             <div class="row1content">
                 <h2>Venues</h2>
+                <span>
+                    <p>Outdoor:</p>
+                    <a class="buttonLook smallButton navbuttons" th:href="@{|/venuelist/outdoor/yes}" th:text="Yes">Outdoor yes</a>
+                    <a class="buttonLook smallButton navbuttons" th:href="@{|/venuelist/outdoor/no}" th:text="No">Outdoor No</a>
+                    <a class="buttonLook smallButton navbuttons" th:href="@{|/venuelist/outdoor/all}" th:text="All">Outdoor all</a>
+                </span>
+
                 <div th:each="venue: ${venues}">
                     <a class="buttonLook mediumButton" th:href="@{|/venuedetails/${venue.id}|}" th:text="${venue.venueName}">Venue Name</a>
 
